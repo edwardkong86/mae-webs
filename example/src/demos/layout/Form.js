@@ -1,5 +1,5 @@
 import React from 'react'
-import { TextInput , Block,Header} from 'mae-webs'
+import { TextInput , Block,Header,DropdownPicker} from 'mae-webs'
 import "./Form.css"
 const data = [
   {
@@ -32,6 +32,7 @@ const Form = () => {
             </div>
             <div className="title2">Please fill in your employment details</div>
           </Block>
+          <DropdownPicker title="Country" />
           {data.map((d, index) => (
             <TextInput
               key={index}
