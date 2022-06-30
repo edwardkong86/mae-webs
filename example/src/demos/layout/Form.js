@@ -1,5 +1,7 @@
 import React from 'react'
-import { TextInput , Block,Header,DropdownPicker} from 'mae-webs'
+import { TextInput , Block,Header,DropdownPicker,Button} from 'mae-webs'
+import { AutoCenter } from "antd-mobile";
+
 import "./Form.css"
 const data = [
   {
@@ -46,7 +48,11 @@ const Form = () => {
           {/* <ShowModal /> */}
         </div>
       </div>
-
+      <AutoCenter className="buttonFooter">
+        <Button block shape="rounded">
+          Continue
+        </Button>
+      </AutoCenter>
   </>
   )
 }
