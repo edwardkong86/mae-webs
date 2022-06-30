@@ -1,5 +1,6 @@
 import React from 'react'
-import { TextInput } from 'mae-webs'
+import { TextInput , Block,Header} from 'mae-webs'
+import "./Form.css"
 const data = [
   {
     label: 'Office address line 1',
@@ -21,17 +22,31 @@ const data = [
   }
 ]
 const Form = () => {
-  return (
-    <div>
-      {data.map((d, index) => (
-        <TextInput
-          key={index}
-          label={d.label}
-          placeholder={d.placeholder}
-          error={d?.error}
-        />
-      ))}
-    </div>
+  return (<>
+  <Header />
+        <div className="container">
+        <div className="content">
+          <Block blockClassName="titleBlock">
+            <div className="title1" styles={{ marginBottom: "4px" }}>
+              ASB Financing/-i Application
+            </div>
+            <div className="title2">Please fill in your employment details</div>
+          </Block>
+          {data.map((d, index) => (
+            <TextInput
+              key={index}
+              label={d.label}
+              placeholder={d.placeholder}
+              error={d?.error}
+            />
+          ))}
+
+          {/* <RadioButton /> */}
+          {/* <ShowModal /> */}
+        </div>
+      </div>
+
+  </>
   )
 }
 

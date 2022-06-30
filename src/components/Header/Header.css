@@ -1,0 +1,19 @@
+.headerTitle{
+    width: 240px;
+    text-align: center;
+    margin-left: 20px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color:#7C7C7D ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25.38px
+}
+.header {
+    height: 60px;
+    padding: 30px 24px 0 24px;
+    flex: none;
+  }
