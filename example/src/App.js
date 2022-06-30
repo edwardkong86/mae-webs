@@ -1,16 +1,14 @@
 import React from 'react'
 
-import { ExampleComponent } from 'mae-webs'
 import 'mae-webs/dist/index.css'
-import "./style.scss"
+import './style.scss'
+import Form from './demos/layout/Form'
 const App = () => {
   return (
     <>
-    <ExampleComponent classNametext="Create React Library Example 😄" />
-    <div className="try">try </div>
+      <Form />
     </>
   )
-
 }
 
 export default App

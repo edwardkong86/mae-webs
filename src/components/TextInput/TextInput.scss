@@ -1,0 +1,46 @@
+// // Input block styling
+// .inputBlock {
+//   margin-bottom: 24px;
+// }
+
+// // Input title styling
+// .inputTitle {
+//   font-size: 14px;
+//   line-height: 18px;
+//   color: black;
+//   font-weight: 400;
+// }
+
+// //override antd input
+
+// //input
+// .adm-input-element {
+//   border-bottom: 1px solid #cfcfcf;
+//   padding-bottom: 11px;
+//   padding-top: 16px;
+//   font-size: 20px;
+//   font-weight: 600;
+//   line-height: 24px;
+//   color: #000000;
+//   font-family: 'Montserrat', sans-serif;
+//   -webkit-appearance: none;
+//   /* //THIS IS TO FIX SAFARI INPUT HAVE ROUNDED CORNER// */
+//   -webkit-border-radius: 0;
+// }
+
+// //input error
+// .inputError {
+
+//   .adm-input-element {
+//     border-bottom: 1px solid red;
+//   }
+// }
+
+// // input placeholder
+// .adm-input-element::placeholder {
+//   color: #cfcfcf;
+//   font-size: 20px;
+//   font-weight: 600;
+//   line-height: 24px;
+//   font-family: 'Montserrat', sans-serif;
+// }
