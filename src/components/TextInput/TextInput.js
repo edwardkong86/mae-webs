@@ -1,13 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Input } from "antd-mobile";
 import { Block } from "../Block";
 import { ErrorMessage } from "../Error";
-
-import "./TextInput.scss"
 import "../../styles.css"
-
 export const TextInput = (props) => {
     const { label, placeholder,error } = props;
+    const [value, setValue] = useState("");
+  
     console.log(error)
     return (
         <Block
@@ -17,11 +16,13 @@ export const TextInput = (props) => {
         >
           <Input
             placeholder={placeholder}
-
+            value={value}
+            onChange={(val) => {
+              setValue(val);
+            }}
             className={(error && 'inputError')}
           />
           <ErrorMessage {...props} />
         </Block>
     );
   };
-  

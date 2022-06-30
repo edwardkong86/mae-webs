@@ -13,8 +13,8 @@
     "antd-mobile": "^5.17.1",
     "antd-mobile-icons": "^0.3.0",
     "mae-webs": "file:..",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
     "react-scripts": "file:../node_modules/react-scripts",
     "sass": "^1.53.0"
   },
