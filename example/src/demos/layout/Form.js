@@ -1,5 +1,5 @@
 import React from 'react'
-import { TextInput , Block,Header,DropdownPicker,Button} from 'mae-webs'
+import { TextInput , Block,Header,DropdownPicker,Button,Radio,ShowModal} from 'mae-webs'
 import { AutoCenter } from "antd-mobile";
 
 import "./Form.css"
@@ -24,7 +24,7 @@ const data = [
   }
 ]
 const Form = () => {
-  return (<>
+  return (<React.Fragment>
   <Header />
         <div className="container">
         <div className="content">
@@ -44,8 +44,8 @@ const Form = () => {
             />
           ))}
 
-          {/* <RadioButton /> */}
-          {/* <ShowModal /> */}
+          <Radio />
+          <ShowModal />
         </div>
       </div>
       <AutoCenter className="buttonFooter">
@@ -53,7 +53,7 @@ const Form = () => {
           Continue
         </Button>
       </AutoCenter>
-  </>
+  </React.Fragment>
   )
 }
 
