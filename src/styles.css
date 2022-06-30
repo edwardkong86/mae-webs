@@ -4,7 +4,6 @@
   --adm-font-family: "Montserrat", sans-serif;
 }
 
-
   /* Input styling */
   .adm-input-element {
     border-bottom: 1px solid #cfcfcf;
@@ -37,6 +36,7 @@
     line-height: 18px;
     color: black;
     font-weight: 400;
+    display: flex;
   }
   
   /* picker title styling */
@@ -46,6 +46,7 @@
     color: black;
     font-weight: 400;
     margin-bottom: 8px;
+    display: flex;
   }
   
   /* Text block styling */

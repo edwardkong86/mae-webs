@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import "./Block.scss"
+import './Block.scss'
+import { Tooltip } from '../Tooltip'
 export const Block = (props) => {
   const {
     title,
@@ -14,7 +15,16 @@ export const Block = (props) => {
   } = props
   return (
     <div variant={variant} className={`${blockClassName} `}>
-      {title && <div className={`${titleClassName} `}>{title}</div>}
+      {title && (
+        <div className={`${titleClassName} `}>
+          {title}
+          <div
+            style={{ marginLeft: '4px', display: 'flex', alignItems: 'center' }}
+          >
+            <Tooltip />
+          </div>
+        </div>
+      )}
       {children && (
         <div
           className={childrenClassName}
