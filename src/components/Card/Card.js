@@ -21,7 +21,7 @@ export const ShowCard = (props) => {
         onClick={onClick}
         style= {{ 
             backgroundImage: `url(${image})`,
-            position: 'absolute',
+            // position: 'absolute',
             }}
         >
             <div>
