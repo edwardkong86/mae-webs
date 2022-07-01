@@ -64,8 +64,8 @@ const Form = () => {
   return (
     <React.Fragment>
       <Header />
-      <Tab items={items}/>
-            <div className='container'>
+      <Tab items={items} />
+      <div className='container'>
         <div className='content'>
           <Block blockClassName='titleBlock'>
             <div className='title1' styles={{ marginBottom: '4px' }}>
@@ -84,22 +84,40 @@ const Form = () => {
           ))}
 
           <Radio />
-          <ShowModal />
+          <div style={{ marginTop: '10px' }}>
+            <ShowModal />
+          </div>
         </div>
       </div>
       <AutoCenter className='buttonFooter'>
         <Button disabled block shape='rounded'>
           Continue
         </Button>
-        <>
-        <Button className="link-fullButton" block shape='rounded'>
+        <Button className='link-fullButton' block shape='rounded'>
+          Add to Favourite
+        </Button>
+        <div style={{ marginBottom: '10px' }}>
+          <Button className='sec-fullButton' block shape='rounded'>
             Add to Favourite
-        </Button>
-        </>
-        <Button hasIcon block shape='rounded'>
-          Add
-          <AddOutline />
-        </Button>
+          </Button>
+        </div>
+        <div style={{ marginBottom: '10px' }}>
+          <Button className='sec-fullButton' disabled block shape='rounded'>
+            Add to Favourite
+          </Button>
+        </div>
+        <div style={{ marginBottom: '10px' }}>
+          <Button hasIcon block shape='rounded'>
+            Add
+            <AddOutline />
+          </Button>
+        </div>
+        <div style={{ marginBottom: '10px' }}>
+          <Button hasIcon disabled block shape='rounded'>
+            Add
+            <AddOutline />
+          </Button>
+        </div>
       </AutoCenter>
     </React.Fragment>
   )
