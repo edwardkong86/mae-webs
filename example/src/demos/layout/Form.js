@@ -6,7 +6,8 @@ import {
   DropdownPicker,
   Button,
   Radio,
-  ShowModal
+  ShowModal,
+  Tab
 } from 'mae-webs'
 import { AutoCenter } from 'antd-mobile'
 import { AddOutline } from 'antd-mobile-icons'
@@ -32,11 +33,39 @@ const data = [
     error: 'Please enter a valid postcode'
   }
 ]
+const items = [
+  {
+    key: '1',
+    title: 'Accounts',
+    content: 'Accounts'
+  },
+  {
+    key: '2',
+    title: 'cards',
+    content: 'cards'
+  },
+  {
+    key: '3',
+    title: 'Fixed Deposits',
+    content: 'Fixed Deposits'
+  },
+  {
+    key: '4',
+    title: 'Loan',
+    content: 'Loan'
+  },
+  {
+    key: '5',
+    title: 'Wealth',
+    content: 'Wealth'
+  }
+]
 const Form = () => {
   return (
     <React.Fragment>
       <Header />
-      <div className='container'>
+      <Tab items={items}/>
+            <div className='container'>
         <div className='content'>
           <Block blockClassName='titleBlock'>
             <div className='title1' styles={{ marginBottom: '4px' }}>

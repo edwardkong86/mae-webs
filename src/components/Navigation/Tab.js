@@ -38,7 +38,7 @@ export const Tab = (props) => {
       >
         {items.map((item) => (
           <Swiper.Item>
-            <div style={{height:"80vh",width:"80vh"}}>{item.content}</div>
+            <div style={{height:"100px",display:"flex",justifyContent:"center",alignItems:"center",fontSize:"15px",backgroundColor:"white"}}>{item.content}</div>
           </Swiper.Item>
         ))}
       </Swiper>
