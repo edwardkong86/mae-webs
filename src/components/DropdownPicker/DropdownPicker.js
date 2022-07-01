@@ -3,8 +3,8 @@ import { Button, Picker, Space } from "antd-mobile";
 // import Icon from "@ant-design/icons";
 import { Block } from "../Block/Block";
 import { DownOutline } from "antd-mobile-icons";
-
 import "../../styles.css";
+import { ErrorMessage } from "../Error";
 export const basicColumns = [
   [
     { label: "Malaysia", value: "my" },
@@ -62,6 +62,8 @@ export const DropdownPicker = (props) => {
         cancelText={<Button className="cancelButton">Cancel</Button>}
         mouseWheel={true}
       />
+          <ErrorMessage {...props} />
+
     </Block>
   );
 };

@@ -1,11 +1,10 @@
 import React from 'react'
 import { Button as AntdButton} from "antd-mobile";
-import "../../styles.css"
-
+import "./Button.scss"
 export const Button = (props) => {
-    const {label,children} = props
+    const {label,children,disabled} = props
     return(
-        <AntdButton block shape="rounded">
+        <AntdButton className="fullButton" disabled={disabled} block shape="rounded">
           {label || children}
         </AntdButton>
     )

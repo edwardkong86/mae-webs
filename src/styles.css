@@ -53,17 +53,7 @@
   .inputBlock {
     margin-bottom: 24px;
   }
-  /* Button Styling */
-  .adm-button {
-    height: 48px;
-    border-radius: 24px;
-    width: 327px;
-    background-color: #ffde00;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
-  }
-  
+
   .adm-space {
     --gap-horizontal: 24px;
   }
@@ -180,7 +170,8 @@
     opacity: 0;
   }
   .pickerBlock {
-    margin-top: 24px;
+    /* margin-top: 24px; */
+    margin-bottom: 24px;
   }
   
   .adm-center-popup {
@@ -195,12 +186,7 @@
     /* padding: 35px 20px 20px 20px; */
   }
   
-  .adm-button:not(.adm-button-default) {
-    --border-color: none;
-    --text-color: black;
-    font-family: "Montserrat";
-  }
-  
+
   .adm-center-popup-close {
     font-size: 25px;
     color: black;
@@ -244,7 +230,6 @@
     border-radius: 24px;
     text-align: start;
     padding-left: 24px;
-    margin-bottom: 24px;
     width: 100%;
   }
   

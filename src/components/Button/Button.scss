@@ -1,0 +1,24 @@
+.fullButton {
+
+  /* Button Styling */
+  &.adm-button {
+    height: 48px;
+    border-radius: 24px;
+    width: 327px;
+    background-color: #ffde00;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &.adm-button:not(.adm-button-default) {
+    --border-color: none;
+    --text-color: black;
+    font-family: 'Montserrat';
+  }
+}
+.adm-button-disabled {
+    background-color: #FFF7BE !important;
+    opacity: 1;
+    color: #DDD7AA;
+  }

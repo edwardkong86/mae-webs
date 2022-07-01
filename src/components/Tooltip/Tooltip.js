@@ -1,6 +1,6 @@
 import React from "react";
 import Icon from "@ant-design/icons";
-import { Modal } from "antd-mobile";
+import { Button, Modal } from "antd-mobile";
 import { InfoSvg } from "../../assets/Icon/InfoSvg";
 import "./Tooltip.scss";
 export const Tooltip = (props) => {

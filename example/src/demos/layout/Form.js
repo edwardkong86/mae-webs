@@ -34,7 +34,7 @@ const Form = () => {
             </div>
             <div className="title2">Please fill in your employment details</div>
           </Block>
-          <DropdownPicker title="Country" />
+          <DropdownPicker title="Country" error="Maximum 2 line"/>
           {data.map((d, index) => (
             <TextInput
               key={index}
@@ -49,7 +49,7 @@ const Form = () => {
         </div>
       </div>
       <AutoCenter className="buttonFooter">
-        <Button block shape="rounded">
+        <Button disabled block shape="rounded">
           Continue
         </Button>
       </AutoCenter>
