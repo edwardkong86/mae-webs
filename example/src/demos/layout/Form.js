@@ -46,6 +46,7 @@ const Form = () => {
 
           <Radio />
           <ShowModal />
+          {/* <ShowCard /> */}
         </div>
       </div>
       <AutoCenter className="buttonFooter">
