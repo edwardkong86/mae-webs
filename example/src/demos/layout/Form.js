@@ -7,7 +7,8 @@ import {
   Button,
   Radio,
   ShowModal,
-  Tab
+  Tab,
+  Result
 } from 'mae-webs'
 import { AutoCenter } from 'antd-mobile'
 import { AddOutline } from 'antd-mobile-icons'
@@ -119,6 +120,8 @@ const Form = () => {
           </Button>
         </div>
       </AutoCenter>
+
+      <Result status="error" title="Oh no" description="no more liao" />
     </React.Fragment>
   )
 }
