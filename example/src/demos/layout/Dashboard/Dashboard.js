@@ -1,5 +1,6 @@
 import React from 'react'
-import { Tab, Result } from 'mae-webs'
+import { Result , Wallet} from 'mae-webs'
+
 const items = [
   {
     key: '1',
@@ -29,11 +30,12 @@ const items = [
 ]
 const Dashboard = () => {
   return (
-    <Result
-      status='success'
-      title='Financing Successful!'
-      description='We will update you within 5 working days once your ASB loan and investment has been placed.'
-    />
+    // <Result
+    //   status='success'
+    //   title='Financing Successful!'
+    //   description='We will update you within 5 working days once your ASB loan and investment has been placed.'
+    // />
+    <Wallet title="Wallet" desc="RM ****"/>
   )
 }
 
