@@ -53,6 +53,7 @@
     "@ant-design/icons": "^4.7.0",
     "antd-mobile": "^5.17.1",
     "antd-mobile-icons": "^0.3.0",
-    "sass": "^1.53.0"
+    "sass": "^1.53.0",
+    "yarn": "^1.22.19"
   }
 }
