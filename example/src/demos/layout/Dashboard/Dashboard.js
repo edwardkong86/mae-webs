@@ -35,7 +35,7 @@ const Dashboard = () => {
     //   title='Financing Successful!'
     //   description='We will update you within 5 working days once your ASB loan and investment has been placed.'
     // />
-    <Wallet title="Wallet" desc="RM ****"/>
+    <Wallet title="Wallet" desc="RM 225.00"/>
   )
 }
 
