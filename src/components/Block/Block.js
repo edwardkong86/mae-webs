@@ -11,7 +11,8 @@ export const Block = (props) => {
     blockClassName,
     titleClassName,
     childrenClassName,
-    variant
+    variant,
+    tooltip
   } = props
   return (
     <div variant={variant} className={`${blockClassName} `}>
@@ -21,7 +22,7 @@ export const Block = (props) => {
           <div
             style={{ marginLeft: '4px', display: 'flex', alignItems: 'center' }}
           >
-            <Tooltip />
+            {tooltip && <Tooltip />}
           </div>
         </div>
       )}
@@ -46,7 +47,8 @@ Block.defaultProps = {
   background: '',
   blockClassName: '',
   titleClassName: '',
-  childrenClassName: ''
+  childrenClassName: '',
+  tooltip: true
 }
 
 Block.propTypes = {

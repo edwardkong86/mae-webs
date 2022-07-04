@@ -1,5 +1,6 @@
 import React from 'react'
-import "./index.scss"
+import { Block } from '../../Block'
+import './index.scss'
 export const BoxTopBottom = (props) => {
   const { title, amount } = props
   return (
@@ -12,7 +13,7 @@ export const BoxTopBottom = (props) => {
         alignItems: 'center'
       }}
     >
-      <div className='box-topBottom-title'>{title}</div>
+      <Block titleClassName='box-topBottom-title' tooltip={false} title={title} />
       <div className='box-topBottom-amount'>{amount}</div>
     </div>
   )
