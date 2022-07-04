@@ -15,8 +15,7 @@ export const ShowCard = (props) => {
         <Block
         childrenClassName="cardBlock"
         >
-        {/* style 1 */}
-        {/* <Card 
+        <Card 
         className='CardContainer' 
         onClick={onClick}
         style= {{ 
@@ -29,31 +28,9 @@ export const ShowCard = (props) => {
                 </div>
             
             
-        </Card> */}
-
-
-        {/* style 2 */}
-        <Card 
-        className='CardContainer2' 
-        onClick={onClick}
-        style= {{ 
-            image: `url(${image})`,
-            }}
-        >
-            <div className="CardMainContainer2">
-                <div>
-                    {/* <div className="CardImage">{image}</div> */}
-                </div>
-                <div>
-                    <div className="subContent2">{subContent2}</div>
-                </div>
-            </div>
-            
-            
         </Card>
 
-     
-     
+
         </Block>
       )
 }

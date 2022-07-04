@@ -121,7 +121,6 @@ const Form = () => {
         </div>
       </AutoCenter>
 
-      <Result status="error" title="Oh no" description="no more liao" />
     </React.Fragment>
   )
 }

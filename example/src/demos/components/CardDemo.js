@@ -72,7 +72,8 @@ export const CardDemo = () => {
           background: '#FFFFFF',
           boxShadow: '0px 4px 16px rgba(0, 0, 0, 0.08)',
           borderRadius: '8px',
-          marginTop: '1rem'
+          marginTop: '1rem',
+          marginBottom:"2rem"
         }}
       >
         <BoxTopBottom title='Potential Earning' amount='RM 49,570.00' />

@@ -41,7 +41,7 @@ const ASB_financing = () => {
                         <div className="asbTitle2">
                         Apply for an ASB Financing/-i and earn more in dividends over the years. Start with RM0 initial investment today.
                         </div>
-                        <div className="asbTitle1" style={{ 'margin-top': '12px'}}>
+                        <div className="asbTitle1" style={{ marginTop: '12px'}}>
                         Related articles
                         </div>
                     </div>
