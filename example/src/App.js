@@ -13,11 +13,11 @@ const App = () => {
       {/* <Form /> */}
       {/* <Dashboard/> */}
       {/* <ProductPage /> */}
-      {/* <ASB_financing /> */}
-      <div style={{padding:"10rem"}}>
+      <ASB_financing />
+      {/* <div style={{padding:"10rem"}}>
       <QuickActionCard image={QRPay} title="Pay Bills"/>
 
-      </div>
+      </div> */}
     </>
   )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { ShowCard, Header, Block, Button} from 'mae-webs'
+import { PromoCard, Header, Block, Button} from 'mae-webs'
 import { Image, AutoCenter } from "antd-mobile";
 import image1 from "../../../../src/assets/Asset_1.png"
 import image2 from "../../../../src/assets/Asset_2.png"
@@ -47,7 +47,7 @@ const ASB_financing = () => {
                     </div>
                 </Block>
                 {data.map((d, index) => (
-                <ShowCard 
+                <PromoCard 
                     key={index}
                     subContent2={d.subContent2}
                     image={d.image}
