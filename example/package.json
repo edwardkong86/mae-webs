@@ -4,16 +4,16 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",
-    "build": "node ../node_modules/react-scripts/bin/react-scripts.js build",
-    "test": "node ../node_modules/react-scripts/bin/react-scripts.js test",
-    "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
+    "start": "node node_modules/react-scripts/bin/react-scripts.js start",
+    "build": "node node_modules/react-scripts/bin/react-scripts.js build",
+    "test": "node node_modules/react-scripts/bin/react-scripts.js test",
+    "eject": "node node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "antd-mobile": "^5.17.1",
     "antd-mobile-icons": "^0.3.0",
-    "mae-webs": "github:shinghuey27/mae-webs",
+    "mae-webs": "https://github.com/shinghuey27/mae-webs.git",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-scripts": "^3.4.4",
