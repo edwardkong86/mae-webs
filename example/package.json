@@ -13,10 +13,10 @@
     "@ant-design/icons": "^4.7.0",
     "antd-mobile": "^5.17.1",
     "antd-mobile-icons": "^0.3.0",
-    "mae-webs": "file:..",
-    "react": "file:../node_modules/react",
-    "react-dom": "file:../node_modules/react-dom",
-    "react-scripts": "file:../node_modules/react-scripts",
+    "mae-webs": "https://github.com/shinghuey27/mae-webs.git",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-scripts": "^3.4.4",
     "sass": "^1.53.0"
   },
   "devDependencies": {
