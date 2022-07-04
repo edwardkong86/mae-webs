@@ -2,7 +2,7 @@ import React from 'react'
 import { Block } from '../../Block'
 import './index.scss'
 export const BoxTopBottom = (props) => {
-  const { title, amount } = props
+  const { title, amount,tooltip } = props
   return (
     <div
       style={{
@@ -13,7 +13,7 @@ export const BoxTopBottom = (props) => {
         alignItems: 'center'
       }}
     >
-      <Block titleClassName='box-topBottom-title' tooltip={false} title={title} />
+      <Block titleClassName='box-topBottom-title' tooltip={tooltip} title={title} />
       <div className='box-topBottom-amount'>{amount}</div>
     </div>
   )
