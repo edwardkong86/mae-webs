@@ -4,19 +4,21 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-scripts/scripts/start.js",
-    "build": "node node_modules/react-scripts/scripts/build.js",
-    "test": "node node_modules/react-scripts/scripts/test.js",
-    "eject": "node node_modules/react-scripts/scripts/eject.js"
+    "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",
+    "build": "node ../node_modules/react-scripts/bin/react-scripts.js build",
+    "test": "node ../node_modules/react-scripts/bin/react-scripts.js test",
+    "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "antd-mobile": "^5.17.1",
     "antd-mobile-icons": "^0.3.0",
-    "mae-webs": "https://github.com/edwardkong86/mae-webs.git",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
-    "react-scripts": "^3.4.4",
+    "axios": "^0.27.2",
+    "dynamo": "https://github.com/yaser2us/dynamo.git",
+    "mae-webs": "file:..",
+    "react": "file:../node_modules/react",
+    "react-dom": "file:../node_modules/react-dom",
+    "react-scripts": "file:../node_modules/react-scripts",
     "sass": "^1.53.0"
   },
   "devDependencies": {
