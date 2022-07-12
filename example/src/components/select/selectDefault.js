@@ -40,7 +40,7 @@ const SelectDefault = (props) => {
           onClick={onClick}
         >
           <Space justify='between' style={{ width: '100%' }}>
-            <span>{value ? value : 'Please Select'}</span>
+            <span style={{fontSize: '14px', fontWeight:'600'}}>{value ? value : 'Please Select'}</span>
             <DownOutline
               style={{ color: 'black', fontSize: '20px', marginRight: '16px' }}
             />
