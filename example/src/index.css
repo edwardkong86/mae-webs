@@ -26,4 +26,19 @@ html {
 
 :root:root {
   --adm-font-family: "Montserrat", sans-serif;
+  --adm-color-primary: #ffde00;
+}
+
+.adm-checkbox.adm-checkbox-checked .adm-checkbox-icon {
+  border-color: #000000;
+  color: #000000;
+}
+
+.adm-radio.adm-radio-checked .adm-radio-icon {
+  border-color: #000000;
+  color: #000000;
+}
+
+.adm-checkbox-content {
+  font-size: 16px;
 }
