@@ -11,11 +11,11 @@ const App = () => {
   return (
     <>
       <DynamoScreen />
-      <Form />
-      <WidgetDemo />
-      <ProductPage />
+      {/* <Form /> */}
+      {/* <WidgetDemo /> */}
+      {/* <ProductPage /> */}
       {/* <ASB_financing /> */}
-      <CardDemo />
+      {/* <CardDemo /> */}
     </>
   )
 }

@@ -5,9 +5,9 @@ import { Button } from "./button";
 import { Fieldset } from "./fieldset";
 // import { Image } from "./image";
 import { Label } from "./label";
-// import { Select } from "./select";
+import { Select } from "./select";
 // import { Switch } from "./switch";
-// import { Text } from "./text";
+import { Text } from "./text";
 
 const Components = {
     fieldset: (props) => <Fieldset {...props} />,
@@ -15,9 +15,9 @@ const Components = {
     button: (props) => <Button {...props} />,
     label: (props) => <Label {...props} />,
     // checkbox: (props) => <Checkbox {...props} />,
-    // text: (props) => <Text {...props} />,
+    text: (props) => <Text {...props} />,
     // switch: (props) => <Switch {...props} />,
-    // select: (props) => <Select {...props} />,
+    select: (props) => <Select {...props} />,
 };
 
 export const renderComponent = (type, propsItems) => {

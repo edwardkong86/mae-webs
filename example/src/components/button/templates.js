@@ -12,7 +12,7 @@ const TemplateList = {
     buttonIcon: (props) => <ButtonIconDefault {...props} />,
     // buttonPrimary: (props) => <ButtonPrimaryDefault {...props} />,
     // "": (props) => <ButtonPrimaryDefault {...props} />,
-    default: (props) => <ButtonDefault {...props} />,
+    '': (props) => <ButtonDefault {...props} />,
 };
 
 export default TemplateList;

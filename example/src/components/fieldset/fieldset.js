@@ -11,6 +11,7 @@ const Fieldset = (props) => {
     if (item === undefined) return null;
 
     const { templateName = "" } = item;
+    console.log("Fieldset", templateName)
 
     //Access to all props that introduced in element.
     return (TemplateList[templateName] && TemplateList[templateName](props)) || null;

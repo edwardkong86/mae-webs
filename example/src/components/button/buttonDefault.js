@@ -12,7 +12,7 @@ const ButtonDefault = (props) => {
     if (item === undefined) return null;
 
     const { label = "", theme = "" } = item;
-
+console.log("ButtonDefault",props)
     const onClick = () => {
         managedCallback({ item });
     };

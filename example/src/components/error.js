@@ -1,49 +1,19 @@
-import React from "react";
-import { StyleSheet, View, Text } from "react-native";
-
-import { RED_ERROR } from "@constants/colors";
+import React from 'react'
+// import "./Error.scss";
 
 const Error = (props) => {
-    const { name, item, error } = props;
-    const errorMsg = (error && error[name] && error[name].message) || "";
+  const { name, item, error } = props
+  const errorMsg = (error && error[name] && error[name].message) || ''
 
-    if (item === undefined) return null;
+  if (item === undefined) return null
+  const { description } = item
 
-    const { description } = item;
-    return (
-        <View style={styles.container}>
-            {!!description && (
-                <Text
-                    fontSize={12}
-                    lineHeight={16}
-                    textAlign="left"
-                    fontStyle="italic"
-                    text={description}
-                    style={styles.errorText}
-                />
-            )}
-            <Text
-                fontSize={12}
-                lineHeight={16}
-                textAlign="left"
-                color={RED_ERROR}
-                text={errorMsg}
-                style={styles.errorText}
-            />
-        </View>
-    );
-};
+  return (
+    <div>
+      {!!description && <div className='error'>{description}</div>}
+      <div className='error'>{errorMsg}</div>
+    </div>
+  )
+}
 
-const styles = StyleSheet.create({
-    container: {
-        marginTop: 3,
-    },
-    errorText: {
-        flexShrink: 1,
-    },
-    descriptionText: {
-        flexShrink: 1,
-    },
-});
-
-export default Error;
+export default Error

@@ -22,21 +22,21 @@ const LabelDefault = (props) => {
     const onPress = () => {
         managedCallback({ item });
     };
-
+    console.log("LabelDefault", props)
     //Access to all props that introduced in element.
     if (header?.length > 0 && description?.length > 0) {
         return (
             <>
                 <div
-                    style={{...DEFAULT, fontSize:14, fontWeight:400, lineHeight:20, textAlign:"left", ...getStyle(theme)}}
-                    onPress={onPress}
+                    style={{...DEFAULT, fontSize:14, fontWeight:400, lineHeight:"20px", textAlign:"left", ...getStyle(theme)}}
+                    // onPress={onPress}
                 >
                     {header}
                 </div>
                 {description?.length > 0 && (
                     <div
-                        style={{...DEFAULT, marginTop: 4, fontSize:16, fontWeight:600, lineHeight:20, textAlign:"left", ...getStyle(theme)}}
-                        onPress={onPress}
+                        style={{...DEFAULT, marginTop: 4, fontSize:16, fontWeight:600, lineHeight:"20px", textAlign:"left", ...getStyle(theme)}}
+                        // onPress={onPress}
                     >
                         {description}
                     </div>
@@ -45,9 +45,9 @@ const LabelDefault = (props) => {
         );
     }
     return action ? (
-        <div style={{...DEFAULT, ...getStyle(theme)}} onPress={onPress}>
+        <a style={{...DEFAULT, ...getStyle(theme)}} onPress={onPress}>
             {label}
-        </div>
+        </a>
     ) : (
         <div style={{...DEFAULT, ...getStyle(theme)}}>
             {label}
