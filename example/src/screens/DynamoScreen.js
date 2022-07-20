@@ -96,8 +96,8 @@ const DynamoScreen = () => {
 
     return (
         <FormBuilderV4
-            key={`dynamo-${currentJson?.items.length}`}
-            name={`dynamo-${currentJson?.items.length}`}
+            key={`dynamo-${currentJson?._id}`}
+            name={`dynamo-${currentJson?._id}`}
             ref={myForm}
             items={currentJson?.items}
             defaultValues={currentJson}
