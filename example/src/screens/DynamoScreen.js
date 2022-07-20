@@ -11,7 +11,7 @@ const DynamoScreen = () => {
     const [currentJson, setCurrentJson] = useState(null);
 
     useEffect(() => {
-        fetchDynamoJson("https://dynamobff.maybanksandbox.com/forms/62c780eafff998001c0d907e");
+        fetchDynamoJson("https://dynamobff.maybanksandbox.com/forms/62cfb684013c34001c168e02");
     }, []);
 
     const fetchDynamoJson = (uri) => {
