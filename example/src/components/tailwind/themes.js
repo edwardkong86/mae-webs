@@ -16,7 +16,7 @@ const themes = [
     [`mbbFont14`, { fontSize: 14 }],
     [`mbbFont16`, { fontSize: 16 }],
     [`mbbFont24`, { fontSize: 24 }],
-    [`mbbHeaderTitle`, { fontSize: "16px", fontWeight: '600', lineHeight:"19.5px" }],
+    [`mbbHeaderTitle`, { fontSize: "16px", fontWeight: '600', lineHeight:"19.5px", textAlign: "center"}],
     [`mbbFontFamily`, { fontFamily: "Montserrat" }],
     [`mbbFontFamilyLight`, { fontFamily: "Montserrat-Light" }],
     [`mbbHR`, { backgroundColor: YELLOW, height: 2, alignSelf: "stretch" }],
