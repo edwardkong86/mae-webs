@@ -5,7 +5,7 @@ import { getStyle } from "../tailwind";
 const DEFAULT = {
     fontSize: 14,
     fontFamily: 'Montserrat',
-    textAlign: "center",
+    textAlign: "left",
     color: '#000000',
 };
 
@@ -28,14 +28,14 @@ const LabelDefault = (props) => {
         return (
             <>
                 <div
-                    style={{...DEFAULT, fontSize:14, fontWeight:400, lineHeight:"20px", textAlign:"left", ...getStyle(theme)}}
+                    style={{...DEFAULT, fontSize:14, fontWeight:400, lineHeight:"20px", ...getStyle(theme)}}
                     // onPress={onPress}
                 >
                     {header}
                 </div>
                 {description?.length > 0 && (
                     <div
-                        style={{...DEFAULT, marginTop: 4, fontSize:16, fontWeight:600, lineHeight:"20px", textAlign:"left", ...getStyle(theme)}}
+                        style={{...DEFAULT, marginTop: 4, fontSize:16, fontWeight:600, lineHeight:"20px", ...getStyle(theme)}}
                         // onPress={onPress}
                     >
                         {description}
