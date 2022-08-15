@@ -5,6 +5,7 @@ import  CheckedSvg  from "../../assets/icons/CheckedSvg";
 import  BackSvg  from "../../assets/icons/BackSvg";
 import  InfoSvg  from "../../assets/icons/InfoSvg";
 import  UnCheckedSvg  from "../../assets/icons/UnCheckedSvg";
+import  MagniferSvg from "../../assets/icons/MagniferSvg";
 
 const IconList = {
     icCloseBlack: (props) => <CloseSvg {...props} />,
@@ -13,6 +14,7 @@ const IconList = {
     info: (props) => <InfoSvg {...props} />,
     checked: (props) => <CheckedSvg {...props} />,
     unchecked: (props) => <UnCheckedSvg {...props} />,
+    icSearch: (props) => <MagniferSvg {...props} />,
 };
 
 export default IconList;
