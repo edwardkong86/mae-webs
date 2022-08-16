@@ -11,7 +11,10 @@ const DynamoScreen = () => {
     const [currentJson, setCurrentJson] = useState(null);
 
     useEffect(() => {
-        fetchDynamoJson("https://dynamobff.maybanksandbox.com/forms/62f25938013c34001c169a02");
+        //SG CASA OPENING
+        fetchDynamoJson("https://dynamobff.maybanksandbox.com/forms/62e09170013c34001c16962d");
+        //SSL
+        //fetchDynamoJson("https://dynamobff.maybanksandbox.com/forms/62f25938013c34001c169a02");
     }, []);
 
     const fetchDynamoJson = (uri) => {
