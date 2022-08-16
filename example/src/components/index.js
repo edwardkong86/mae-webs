@@ -3,7 +3,7 @@ import React from 'react'
 import { Button } from './button'
 import { Checkbox } from './checkbox'
 import { Fieldset } from './fieldset'
-// import { Image } from "./image";
+import { Image } from "./image";
 import { Label } from './label'
 import { Radiobox } from './radiobox'
 import { Select } from './select'
@@ -11,7 +11,7 @@ import { Select } from './select'
 import { Text } from './text'
 
 const Components = {
-  // image:(props) => <Image {...props} />,
+  image:(props) => <Image {...props} />,
   button: (props) => <Button {...props} />,
   checkbox: (props) => <Checkbox {...props} />,
   fieldset: (props) => <Fieldset {...props} />,

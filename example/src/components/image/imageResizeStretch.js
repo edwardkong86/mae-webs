@@ -3,7 +3,7 @@ import React from "react";
 import { getStyle } from "../tailwind";
 import { getImage } from "./imageList";
 
-const ImageDefault = (props) => {
+const ImageResizeStretch = (props) => {
     //Access to main props
     //Injected at runtime
     const { item } = props;
@@ -12,9 +12,15 @@ const ImageDefault = (props) => {
     if (item === undefined) return null;
 
     const { value = "", theme = "" } = item;
-    console.log("ImageDefault", getStyle(theme));
+    console.log("ImageResizeStretch",getStyle(theme))
+
     //Access to all props that introduced in element.
-    return <img src={getImage(value) ?? null} style={getStyle(theme)} />;
+    return (
+        <img
+            src={getImage(value) ?? null}          
+            style={getStyle(theme)}
+        />
+    );
 };
 
-export default ImageDefault;
+export default ImageResizeStretch;

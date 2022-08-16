@@ -7,7 +7,7 @@ import { getStyle } from '../tailwind'
 const TextDefault = (props) => {
     //Access to main props
     //Injected at runtime
-    const { name, item, child, field, error, sharedItems } = props;
+    const { name, item, child, field, error } = props;
 
     //Always check to not render with error ;)
     if (item === undefined) return null;

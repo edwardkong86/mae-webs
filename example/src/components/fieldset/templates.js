@@ -11,6 +11,7 @@ import React from 'react'
 // import * as Assets from "../../../assets";
 import { getStyle } from '../tailwind'
 import FieldsetHeader from './fieldsetHeader'
+import FieldsetTabView from "./fieldsetTabView";
 
 const TemplateList = {
   header: (props) => <FieldsetHeader {...props} />,
@@ -28,7 +29,13 @@ const TemplateList = {
     >
       {props.child && props.child}
     </div>
-  )
+  ),
+  localPagination: (props) => <FieldsetTabView {...props} />,
+  scrollView: (props) => (<div
+  style={getStyle(props.item?.theme) ?? { flex: 1, paddingHorizontal: 24 }}
+>
+  {props.child && props.child}
+</div>)
 }
 
 export default TemplateList
