@@ -20,6 +20,7 @@ const FieldsetHeader = (props) => {
           flexDirection: 'row',
           justifyContent: child?.length > 1 ? 'space-between' : 'center',
           alignItems: 'center',
+          marginTop: 20,
           ...getStyle(theme)
         }}
       >

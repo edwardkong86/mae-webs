@@ -25,7 +25,14 @@ const FieldsetTabView = (props) => {
     const { label = "", theme = "", options } = item;
 
     
-    
+    const colors = ['#ace0ff', '#bcffbd', '#e4fabd', '#ffcfac']
+    const items = colors.map((color, index) => (
+      <Swiper.Item key={index}>
+        <div className={''} style={{ background: color }}>
+          {index + 1}
+        </div>
+      </Swiper.Item>
+    ))
 
     // function renderTabBar(props) {
     //     function onPress(index) {
@@ -95,6 +102,7 @@ const FieldsetTabView = (props) => {
         return child?.find((i) => i.props?.item?.label == props?.route?.key) ?? null;
     }
 
+    console.log("childchild", child)
     //Access to all props that introduced in element.
     return <div style={getStyle(theme)}>
         <Tabs
@@ -113,7 +121,7 @@ const FieldsetTabView = (props) => {
       </Tabs>
       <Swiper
         direction='horizontal'
-        loop
+        loop={false}
         indicator={() => null}
         ref={swiperRef}
         defaultIndex={activeIndex}
@@ -121,11 +129,13 @@ const FieldsetTabView = (props) => {
             setIndex(index)
         }}
       >
-        {child.map((item) => {
+        
+        {child.map((item, index) => {
             console.log("itemitem",item )
         return (
-          <Swiper.Item>
-            <div style={{height:"100vh",display:"flex",fontSize:"15px",backgroundColor:"white"}}>
+          <Swiper.Item key={index}>
+            <div style={{height:"100vh",display:"flex",fontSize:"15px"}}>
+            {index + 1}
                 {child?.find((i) => i.props?.item?.label == item.props?.item?.label)}
             </div>
           </Swiper.Item>

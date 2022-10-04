@@ -18,11 +18,12 @@ const TemplateList = {
   // text: (props) => (
   //     <Text style={getStyle(props.item?.theme) ?? { flex: 1 }}>{props.child && props.child}</Text>
   // ),
-  '': (props) => (
+  '': (props) => {
+    return (
     <div style={getStyle(props.item?.theme) ?? { flex: 1 }}>
       {props.child && props.child}
     </div>
-  ),
+  )},
   block: (props) => (
     <div
       style={getStyle(props.item?.theme) ?? { flex: 1, paddingHorizontal: 24 }}

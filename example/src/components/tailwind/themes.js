@@ -29,8 +29,10 @@ const themes = [
             alignItems: "center",
             flexDirection: "row",
             justifyContent: "space-between",
-            paddingBottom: 20,
-            paddingHorizontal: 24,
+            "padding-left": "24px",
+            "padding-right": "24px",
+            "padding-bottom": "20px",
+            height:"20px"
         },
     ],
     [
