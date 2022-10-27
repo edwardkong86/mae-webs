@@ -6,12 +6,13 @@ import ASB_financing from './demos/layout/ProductPage_ASB_financing/ASB_financin
 import { CardDemo } from './demos/components/CardDemo'
 import { WidgetDemo } from './demos/components/WidgetDemo'
 import DynamoScreen from './screens/DynamoScreen'
+import CMS from './demos/layout/CMS'
 
 const App = () => {
   return (
     <>
-      <DynamoScreen />
-      {/* <Form /> */}
+      {/* <DynamoScreen /> */}
+      <CMS />
       {/* <WidgetDemo /> */}
       {/* <ProductPage /> */}
       {/* <ASB_financing /> */}
